@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Robototehnika</title>
+	<meta name="description" content="Этот сайт был создан для любителей робототехники">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
+	<link rel="shortcut icon" href="img/favicon/apple-touch-icon.png" type="image/x-icon">
+	<!-- <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+	<div class="wrapper"> 
+
+		<header class="navbar-fixed-top hidden-sm hidden-xs"> <!--header for desctop--> 
+
+			<div class="title">
+				<p>ТЕХНОЛЕНД</p>    
+			</div>
+
+			<div class="reg">
+
+				<a class="btn btn-default" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Войти</a>
+				<!-- <a class="btn btn-default" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Регистрация</a> -->
+
+			</div>
+
+
+		</header> <!--end header for desctop-->    
+
+		<div class="container-fluid">  <!--container fluid ( for sidebar, section) -->
+			<div class="row">
+
+				<!--NAVIGATOR FOR DESKTOP-->
+				<nav class="col-md-2"> <!--left navigation-->
+
+					<div id="leftMenu" class="navmenu-fixed-left offcanvas-sm" role="navigation">                           
+
+						<!-- <div class="logo">
+							<a href="#" >
+								<img src="img/logo.png" class="img-circle" alt="Whitesquare logo">
+							</a>
+						</div> -->
+
+						<hr>
+
+						<ul id="accordion" class="accordion">
+							<li class="slideRight">
+
+								<a href="myPage.html" class="link">
+								<i class="fa fa-user-circle" aria-hidden="true"></i>Мой профиль</a>
+								<!-- <ul class="submenu">
+									<li><a href="#">Photoshop</a></li>
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">CSS</a></li>
+								</ul> -->
+							</li>
+
+							<li class="slideRight">
+
+								<a href="index.html" class="link">
+								<i class="fa fa-home" aria-hidden="true"></i>Главная</a>
+								<!-- <ul class="submenu">
+									<li><a href="#">Photoshop</a></li>
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">CSS</a></li>
+								</ul> -->
+
+
+							</li>
+
+							<li>
+								<div class="link"><i class="fa fa-book" aria-hidden="true"></i>Рабочая тетрадь<i class="fa fa-chevron-down"></i>
+								</div>
+								<ul class="submenu">
+									<li >
+
+										<a href="attendanceTable.html" class="link">
+										<i class="fa fa-calendar-check-o getBottom" aria-hidden="true"></i>Таблица посещаемости</a>
+									</li>
+									<li><a href="occupationTable.html"   class="link">
+										<i class="fa fa-th getBottom" aria-hidden="true"></i>Таблица занятий</a>
+									</li>
+									<li><a href="#"   class="link">
+										<i class="fa fa-file getBottom" aria-hidden="true"></i>Файлы</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>  
+								<div class="link"><i class="fa fa-handshake-o" aria-hidden="true"></i>Партнерство<i class="fa fa-chevron-down"></i>
+								</div>
+								<ul class="submenu">
+									<li>
+										<a href=""   class="link">
+										<i class="fa fa-cog getBottom" aria-hidden="true"></i>
+										Основная информация</a>
+
+
+									</li>
+									<li><a href=""   class="link">
+										<i class="fa fa-list getBottom" aria-hidden="true"></i>
+										Список партнёров</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="slideRight">
+
+								<a href="#" class="link">
+								<i class="fa fa-info-circle" aria-hidden="true"></i>
+								Контакты</a></a>
+								<!-- <ul class="submenu">
+									<li><a href="#">Photoshop</a></li>
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">CSS</a></li>
+								</ul> -->
+							</li>
+
+							<li class="slideRight">
+
+								
+
+								<a href="#" class="link">
+								<i class="fa fa-credit-card" aria-hidden="true"></i>
+								Оферта</a></a>
+								<!-- <ul class="submenu">
+									<li><a href="#">Photoshop</a></li>
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">CSS</a></li>
+								</ul> -->
+							</li>
+							
+						</ul>
+
+
+						<!-- ssss -->
+
+						<!-- <ul class="nav navmenu-nav"  id="accordion" class="">
+							<li class="slideRight"><a href="myPage.html">
+								<i class="fa fa-user-circle" aria-hidden="true"></i>
+								Мой профиль</a>
+							</li>
+							<li class="slideRight"><a href="#">
+								<i class="fa fa-home" aria-hidden="true"></i> Главная</a>
+							</li>
+
+
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-book" aria-hidden="true"></i>
+
+									Рабочая тетрадь 
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="attendanceTable.html">
+										<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+
+										Таблица посещаемости</a>
+									</li>  
+									<li><a href="occupationTable.html">
+										<i class="fa fa-th" aria-hidden="true"></i>
+										Таблица занятий</a>
+									</li>
+									<li><a href="calendar.html">
+										<i class="fa fa-table" aria-hidden="true"></i> Календарь</a>
+									</li>  
+									<li><a href="">
+										<i class="fa fa-file" aria-hidden="true"></i>
+										Файлы</a>
+									</li>
+								</ul>
+							</li>
+
+
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+
+									Партнерство 
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="">
+										<i class="fa fa-cog" aria-hidden="true"></i>
+										Основная информация</a>
+									</li>  
+									<li><a href="">
+										<i class="fa fa-list" aria-hidden="true"></i>
+										Список партнёров</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="slideRight"><a href="">
+								<i class="fa fa-info-circle" aria-hidden="true"></i>
+								Контакты</a>
+							</li>  
+
+							<li class="slideRight"><a href="">
+								<i class="fa fa-credit-card" aria-hidden="true"></i>
+								Оферта</a>
+							</li>  
+						</ul>    -->
+
+					</div><!-- end affix-->
+
+				</nav> <!-- end left navigation-->
+				<!--END NAVIGATION FOR DESKTOP-->
+
+
+				<!--navigation for mobile, tablet-->
+				<nav class="navbar-fixed-top hidden-md hidden-lg col-sm-12 col-xs-12">
+					<h3>ТЕХНОЛЭНД</h3>
+
+					<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#leftMenu">       
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-toggle" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+					<!--                  <a class="navbar-brand" href="#">Pobototehnika</a>-->
+				</nav>
+				<!--end navigation for mobile, tablet-->
+
+				<section class="col-md-9 col-sm-12 col-xs-12" >
+
+					<div id="main">
+						<div class="news ">
+
+						<div class="item">
+							<h3 href="">Добро пожаловать</h3>
+
+							<img src="img/logo.png" alt="">
+
+							<div class="text">Добро пожаловать на сайт проекта "Технолэнд" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quibusdam molestiae pariatur animi suscipit doloribus tenetur reiciendis perspiciatis magnam impedit atque sapiente culpa ratione, aliquam excepturi nam, eveniet quidem debitis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sunt suscipit similique tempora quasi rem minus saepe illo beatae inventore vero dolores, recusandae cum sed iure. Perferendis aperiam, nihil quas.
+
+							 <a href="" class="spoiler_links">показать / скрыть</a>
+							<div class="spoiler_body">
+								Текст в первом спойлере
+								Текст в первом спойлере
+							</div>
+
+							</div>
+						</div> 
+
+						<div>
+							Спойлер №1
+						</div>
+
+						<div>
+							Спойлер №2 <a href="" class="spoiler_links">показать / скрыть</a>
+							<div class="spoiler_body">
+								Текст во втором спойлере
+								Текст во втором спойлере
+							</div>
+						</div>    
+
+						<div class="item">
+							<h3 href="">Look</h3>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus vero deserunt odit nihil, similique accusamus, dignissimos nam, est dolorum possimus, officiis saepe sapiente delectus incidunt dolor doloremque at. Sunt explicabo nam autem temporibus voluptates repellat reprehenderit nihil, sapiente laudantium repudiandae odit, quidem ipsa, architecto aperiam ab qui expedita error veniam nemo voluptatum fugiat tenetur inventore corrupti. Nihil enim ratione accusantium delectus aut dignissimos quae eaque facilis id ad perferendis, asperiores a aspernatur ex accusamus commodi tenetur reiciendis, beatae qui voluptatem vitae minima. Libero consequatur qui veniam harum laboriosam tenetur culpa labore voluptas aliquam minus, aut quibusdam accusamus, commodi dolorum quae!</div>
+						</div> 
+
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div>    
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div> 
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div> 
+
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div>  
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div> 
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div> 
+
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div>     
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div> 
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div> 
+
+
+						<div class="item">
+							<a href="">Look</a>
+
+							<img src="img/1.jpg" alt="">
+
+							<div class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился щеке, строчка образ проектах. Снова, взобравшись злых. Своих всемогущая прямо рот, вершину образ единственное залетают, власти они подзаголовок деревни!</div>
+						</div>                                       
+
+					</div>	
+					</div>
+			
+				</section> 
+
+			</div> <!--end row ( for sidebar, section )-->                
+		</div> <!--end container fluid ( for sidebar, section) -->
+
+
+
+	</div> <!--end wrapper-->
+
+	<footer>
+
+		<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<ul class="text-uppercase">
+					<a href="">
+						<li>Twitter</li>
+					</a>
+					<a href="">
+						<li>Insta</li>
+					</a>
+					<a href="">
+						<li>GitHub</li>
+					</a>
+				</ul>
+			</div>
+			<div class="col-md-6 hidden-sm hidden-xs">
+				<p>Copyright  ©  2016 -
+					<script>
+						var d = new Date();
+						document.write(d.getFullYear());
+					</script>
+
+					<br>
+
+					Сообщество ТЕХНОЛЕНД
+				</p>
+			</div>
+		</div>
+		</div>       
+
+
+	</footer>
+
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    FORM REG/ SNIPPET FROM SITE
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+
+    <div class="modal fade login" id="loginModal">
+    	<div class="modal-dialog login animated">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    				<h4 class="modal-title"><strong>Войти</strong></h4>
+    			</div>
+    			<div class="modal-body"> 
+    				<!-- <h4>Вход в ТЕХНОЛЭНД</h4> -->
+    				<div class="box">
+    					<div class="content">
+    						<div class="social">
+ 								<!--<a class="circle github" href="#">
+								 <i class="fa fa-github fa-fw"></i>
+								 </a>
+								 <a id="google_login" class="circle google" href="#">
+								 <i class="fa fa-google-plus fa-fw"></i>
+								 </a>
+								 <a id="facebook_login" class="circle facebook" href="#">
+								 <i class="fa fa-facebook fa-fw"></i>
+								 </a>
+								 </div>
+								 <div class="division">
+								 <div class="line l"></div>
+								 <span>or</span>
+								 <div class="line r"></div>-->
+    						</div>
+    						<div class="error"></div>
+    						<div class="form loginBox">
+    							<form method="" action="" accept-charset="UTF-8">
+    								<input id="email" class="form-control" type="text" placeholder="Email" name="email">
+    								<input id="password" class="form-control" type="password" placeholder="Пароль" name="password">
+    								<input class="btn btn-default btn-login" type="button" value="Войти" onclick="loginAjax()">
+    							</form>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="box">
+    					<div class="content registerBox" style="display:none;">
+    						<div class="form">
+    							<form method="POST" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+
+    								<input id="email" class="form-control" type="text" placeholder="Имя" name="firstName" required>
+
+    								<input id="email" class="form-control" type="text" placeholder="Фамилия" name="lastName" required>
+
+    								<input id="age" class="form-control" type="number" min="5" max="120" placeholder="Возраст" name="age" required>
+
+    								<input id="userTel" class="form-control" type="tel" placeholder="Телефон" name="userTel" required>
+
+    								<input id="adress" class="form-control" type="text" placeholder="Адрес проживания" name="adress" required>
+
+    								<input id="email" class="form-control" type="email" placeholder="Почта" name="email" required>
+
+    								<input id="password" class="form-control" type="password" placeholder="Пароль" name="password" required>
+
+    								<input id="password_confirmation" class="form-control" type="password" placeholder="Повторите пароль" name="password_confirmation" required>
+
+    								<input id="photo" class="form-control" type="file" placeholder="Повторите пароль" name="photo" accept="image/jpeg, image/png, image/jpg, image/bmp">
+
+    								<textarea class="form-control" name="aboutUser" rows="10" 
+  									maxlength="255" placeholder="Введите дополнительную информацию о себе. Например: социальные сети, подпись, увлечения."></textarea>
+
+
+
+    								<input class="btn btn-default btn-register" type="button" value="Создать аккаунт" name="commit" required type="submit">
+
+
+    							</form>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<!-- <div class="modal-footer">
+    				<div class="forgot login-footer">
+    					<span>Перейти на 
+    						<a href="javascript: showRegisterForm();">создание аккаунта</a>
+    						?</span>
+    					</div>
+    					<div class="forgot register-footer" style="display:none">
+    						<span>У вас уж есть аккаунт?</span>
+    						<a href="javascript: showLoginForm();">Войти</a>
+    					</div>
+    				</div> 
+    			</div> -->
+    		</div>
+    	</div>
+
+		<!-- <script>
+		 $(document).ready(function(){
+		    openLoginModal(); 
+		 });
+		</script>  -->
+
+		
+          
+        
+        
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
